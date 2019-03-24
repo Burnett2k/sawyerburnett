@@ -1,5 +1,5 @@
 # Set the base image to Node 8.7
-FROM node:8.9.4
+FROM node:alpine
 
 # File Author / Maintainer
 MAINTAINER Sawyer Blue Burnett
@@ -13,8 +13,8 @@ COPY src/ ./src
 COPY public/ ./public
 
 # Install NPM packages ( using yarn )
-RUN npm install
-RUN npm install -g react-static
-RUN npm run build
+RUN yarn install
+RUN yarn global add react-static
+RUN yarn build
 
 EXPOSE 80
