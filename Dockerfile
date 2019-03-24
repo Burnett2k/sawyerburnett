@@ -8,12 +8,13 @@ MAINTAINER Sawyer Blue Burnett
 COPY package.json ./
 COPY .babelrc ./
 COPY static.config.js ./
+
 COPY src/ ./src
 COPY public/ ./public
 
 # Install NPM packages ( using yarn )
-RUN yarn install
-RUN yarn install -g react-static
-RUN yarn build
+RUN npm install
+RUN npm install -g react-static
+RUN npm run build
 
 EXPOSE 80
