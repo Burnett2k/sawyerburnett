@@ -1,4 +1,8 @@
-# React-Static - Basic Template
+# Personal website
+
+experimenting with building a person site with a static site generator.
+
+[setting up nginx](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-18-04)
 
 Create a new project:
 
