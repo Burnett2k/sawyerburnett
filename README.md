@@ -2,8 +2,6 @@
 
 experimenting with building a person site with a static site generator.
 
-[setting up nginx](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-18-04)
-
 Create a new project:
 
 ```bash
@@ -34,3 +32,10 @@ $ yarn serve
 ```bash
 $ yarn build # or react-static build
 ```
+
+to get material-ui installed:
+
+yarn add @material-ui/core
+
+install react jss
+https://github.com/nozzle/react-static/tree/master/packages/react-static-plugin-jss
