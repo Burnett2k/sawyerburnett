@@ -10,13 +10,17 @@
     "serve": "serve dist -p 5001 -s"
   },
   "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "@material-ui/styles": "^3.0.0-alpha.10",
     "@reach/router": "^1.2.1",
     "axios": "^0.18.0",
     "core-js": "^2.6.5",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-hot-loader": "^4.3.12",
-    "react-static": "^6.3.5"
+    "react-jss": "^8.6.1",
+    "react-static": "^6.3.5",
+    "react-static-plugin-jss": "^6.3.0"
   },
   "devDependencies": {
     "eslint-config-react-tools": "1.x.x",
