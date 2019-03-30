@@ -8,7 +8,7 @@ import {
 } from "@material-ui/core/styles";
 import { purple, green } from "@material-ui/core/colors";
 import { AppBar, Toolbar, Drawer, Typography } from "@material-ui/core";
-import SimpleMenu from "./containers/Menu.js";
+import NavigationMenu from "./containers/NavigationMenu";
 
 const styles = {
   root: {
@@ -23,6 +23,9 @@ const theme = createMuiTheme({
   palette: {
     primary: purple,
     secondary: green
+  },
+  typography: {
+    useNextVariants: true
   }
 });
 
@@ -35,8 +38,7 @@ function App(props) {
           <div className={classes.root}>
             <AppBar position="static">
               <Toolbar>
-                <SimpleMenu />
-
+                <NavigationMenu />
                 <Typography
                   variant="h6"
                   color="inherit"
