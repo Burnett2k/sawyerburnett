@@ -7185,7 +7185,7 @@ react-static-plugin-jss@^6.3.0:
   resolved "https://registry.yarnpkg.com/react-static-plugin-jss/-/react-static-plugin-jss-6.3.0.tgz#ebc0e10b043c4f691589e4a9dadde5bc99d57183"
   integrity sha512-dr7106pf5OcKj6aAuA8pMdb+8J2qcGSX8GeQjaRZm2Z+Hh8QyP1zzFtS81z6lsLscf/1SDVjeSEq2Xh13G7bTA==
 
-react-static@^6.3.5:
+react-static@^6.3.6:
   version "6.3.6"
   resolved "https://registry.yarnpkg.com/react-static/-/react-static-6.3.6.tgz#e9d44e1e289fd31200646c6695f24d646a9d862a"
   integrity sha512-p7lR5ZrVizmXh91Mvo3n7wTKV71wQTwpMSor22TujZFl7/p7U7gSxdo9OJw6ntZaFhjccXO9CNVheNffWMGXww==
