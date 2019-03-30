@@ -1,10 +1,23 @@
 import React from "react";
 import { Root, Routes } from "react-static";
-import { Link } from "@reach/router";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import {
+  MuiThemeProvider,
+  createMuiTheme,
+  withStyles
+} from "@material-ui/core/styles";
 import { purple, green } from "@material-ui/core/colors";
-import "./app.css";
+import { AppBar, Toolbar, Drawer, Typography } from "@material-ui/core";
+import SimpleMenu from "./containers/Menu.js";
+
+const styles = {
+  root: {
+    flexGrow: 1
+  },
+  grow: {
+    flexGrow: 1
+  }
+};
 
 const theme = createMuiTheme({
   palette: {
@@ -13,18 +26,30 @@ const theme = createMuiTheme({
   }
 });
 
-function App() {
+function App(props) {
+  const { classes } = props;
   return (
     <Root>
       <MuiThemeProvider theme={theme}>
         <CssBaseline>
-          <nav>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/projects">Projects</Link>
-          </nav>
-          <div className="content">
-            <Routes />
+          <div className={classes.root}>
+            <AppBar position="static">
+              <Toolbar>
+                <SimpleMenu />
+
+                <Typography
+                  variant="h6"
+                  color="inherit"
+                  className={classes.grow}
+                >
+                  Sawyer Burnett
+                </Typography>
+              </Toolbar>
+            </AppBar>
+            <Drawer />
+            <div className="content">
+              <Routes />
+            </div>
           </div>
         </CssBaseline>
       </MuiThemeProvider>
@@ -32,4 +57,4 @@ function App() {
   );
 }
 
-export default App;
+export default withStyles(styles)(App);
