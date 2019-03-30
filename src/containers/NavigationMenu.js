@@ -8,6 +8,10 @@ const styles = {
   menuButton: {
     marginLeft: -12,
     marginRight: 20
+  },
+  link: {
+    textDecoration: "none",
+    color: "inherit"
   }
 };
 
@@ -47,15 +51,14 @@ class NavigationMenu extends React.Component {
           open={Boolean(anchorEl)}
           onClose={this.handleClose}
         >
-          <MenuItem onClick={this.handleClose}>
-            <Link to="/">Home</Link>
+          <MenuItem component="a" href="/" onClick={this.handleClose}>
+            Home
           </MenuItem>
-          <MenuItem onClick={this.handleClose}>
-            <Link to="/about">About</Link>
+          <MenuItem component="a" href="/about" onClick={this.handleClose}>
+            About
           </MenuItem>
-
-          <MenuItem onClick={this.handleClose}>
-            <Link to="/projects">Projects</Link>
+          <MenuItem component="a" href="/projects" onClick={this.handleClose}>
+            Projects
           </MenuItem>
         </Menu>
       </div>
