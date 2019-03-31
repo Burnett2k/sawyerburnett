@@ -15,7 +15,7 @@ export default {
         }
       }
     ]
-  ],
-  siteRoot: "https://www.sawyerburnett.com",
-  siteRootStaging: "http://localhost:5001"
+  ]
+  // siteRoot: "https://www.sawyerburnett.com",
+  // siteRootStaging: "http://localhost:5001"
 };
