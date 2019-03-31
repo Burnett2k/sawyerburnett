@@ -1,13 +1,17 @@
 import React from "react";
 import { Root, Routes } from "react-static";
-import CssBaseline from "@material-ui/core/CssBaseline";
 import {
   MuiThemeProvider,
   createMuiTheme,
   withStyles
 } from "@material-ui/core/styles";
-import { purple, green } from "@material-ui/core/colors";
-import { AppBar, Toolbar, Drawer, Typography } from "@material-ui/core";
+import {
+  AppBar,
+  Toolbar,
+  Drawer,
+  Typography,
+  CssBaseline
+} from "@material-ui/core";
 import NavigationMenu from "./containers/NavigationMenu";
 
 const styles = {
@@ -21,8 +25,8 @@ const styles = {
 
 const theme = createMuiTheme({
   palette: {
-    primary: purple,
-    secondary: green
+    primary: { main: "#00838F" },
+    secondary: { main: "#8fa3ad" }
   },
   typography: {
     useNextVariants: true

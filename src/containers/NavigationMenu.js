@@ -59,6 +59,9 @@ class NavigationMenu extends React.Component {
           <MenuItem component="a" href="/projects" onClick={this.handleClose}>
             Projects
           </MenuItem>
+          <MenuItem component="a" href="/consulting" onClick={this.handleClose}>
+            Consulting
+          </MenuItem>
         </Menu>
       </div>
     );
