@@ -1,6 +1,5 @@
 import React from "react";
 import { Menu, MenuItem, IconButton } from "@material-ui/core";
-import { Link } from "@reach/router";
 import MenuIcon from "@material-ui/icons/Menu";
 import { withStyles } from "@material-ui/core/styles";
 
