@@ -8,6 +8,7 @@ MAINTAINER Sawyer Blue Burnett
 COPY package.json ./
 COPY .babelrc ./
 COPY static.config.js ./
+COPY yarn.lock ./
 
 COPY src/ ./src
 COPY public/ ./public
