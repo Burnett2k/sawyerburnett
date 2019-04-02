@@ -14,7 +14,7 @@ ssh root@167.99.106.189 << 'EOSSH'
     docker stop $container
     
     # delete old container to save space
-    docker rm $(docker ps -a -q)
+    docker rm $(docker ps --filter=status=exited --filter=status=created -q)
 
     # build a new docker container based upon updated repository
     docker build -t sawyerburnett .
