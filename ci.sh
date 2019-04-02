@@ -1,13 +1,13 @@
 #! /bin/bash
 ssh root@167.99.106.189 << 'EOSSH'
 
-    # move to work timer app directory
+    # move to sawyerburnett app directory
     cd sawyerburnett/
 
     # pull the latest code
     git pull
 
-    # get id of currently running work timer docker container
+    # get id of currently running sawyerburnett docker container
     container=$(docker ps -a -q --filter ancestor=sawyerburnett --format="{{.ID}}")
 
     # stop the docker container
