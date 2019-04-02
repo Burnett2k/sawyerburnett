@@ -1,35 +1,71 @@
 import React from "react";
-import { Menu, MenuItem, IconButton } from "@material-ui/core";
+import {
+  List,
+  ListItem,
+  ListItemText,
+  ListItemIcon,
+  IconButton,
+  Drawer
+} from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import { withStyles } from "@material-ui/core/styles";
+import { Home, Person, LaptopMac, GroupAdd } from "@material-ui/icons";
 
 const styles = {
   menuButton: {
     marginLeft: -12,
     marginRight: 20
   },
-  link: {
-    textDecoration: "none",
-    color: "inherit"
+  list: {
+    width: "auto"
   }
 };
 
 class NavigationMenu extends React.Component {
   state = {
-    anchorEl: null
+    left: false
   };
 
-  handleClick = event => {
-    this.setState({ anchorEl: event.currentTarget });
-  };
-
-  handleClose = () => {
-    this.setState({ anchorEl: null });
+  toggleDrawer = (side, open) => () => {
+    this.setState({
+      [side]: open
+    });
   };
 
   render() {
     const { anchorEl } = this.state;
     const { classes } = this.props;
+
+    const list = (
+      <div className={classes.list}>
+        <List component="nav">
+          <ListItem button component="a" href="/">
+            <ListItemIcon>
+              <Home />
+            </ListItemIcon>
+            <ListItemText primary="Home" />
+          </ListItem>
+          <ListItem button component="a" href="/about">
+            <ListItemIcon>
+              <Person />
+            </ListItemIcon>
+            <ListItemText primary="About" />
+          </ListItem>
+          <ListItem button component="a" href="/projects">
+            <ListItemIcon>
+              <LaptopMac />
+            </ListItemIcon>
+            <ListItemText primary="Projects" />
+          </ListItem>
+          <ListItem button component="a" href="/consulting">
+            <ListItemIcon>
+              <GroupAdd />
+            </ListItemIcon>
+            <ListItemText primary="Consulting" />
+          </ListItem>
+        </List>
+      </div>
+    );
 
     return (
       <div>
@@ -37,32 +73,25 @@ class NavigationMenu extends React.Component {
           className={classes.menuButton}
           color="inherit"
           aria-label="Menu"
-          onClick={this.handleClick}
+          onClick={this.toggleDrawer("left", true)}
           aria-owns={anchorEl ? "simple-menu" : undefined}
           aria-haspopup="true"
         >
           <MenuIcon />
         </IconButton>
-
-        <Menu
-          id="simple-menu"
-          anchorEl={anchorEl}
-          open={Boolean(anchorEl)}
-          onClose={this.handleClose}
+        <Drawer
+          open={this.state.left}
+          onClose={this.toggleDrawer("left", false)}
         >
-          <MenuItem component="a" href="/" onClick={this.handleClose}>
-            Home
-          </MenuItem>
-          <MenuItem component="a" href="/about" onClick={this.handleClose}>
-            About
-          </MenuItem>
-          <MenuItem component="a" href="/projects" onClick={this.handleClose}>
-            Projects
-          </MenuItem>
-          <MenuItem component="a" href="/consulting" onClick={this.handleClose}>
-            Consulting
-          </MenuItem>
-        </Menu>
+          <div
+            tabIndex={0}
+            role="button"
+            onClick={this.toggleDrawer("left", false)}
+            onKeyDown={this.toggleDrawer("left", false)}
+          >
+            {list}
+          </div>
+        </Drawer>
       </div>
     );
   }

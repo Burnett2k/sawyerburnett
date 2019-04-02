@@ -10,7 +10,7 @@ export default () => (
       </Typography>
       <Typography component="p">
         I am open to occasional consulting and side projects related to agile
-        consulting, React, or NodeJS.
+        React, or NodeJS.
       </Typography>
     </Card>
   </div>
