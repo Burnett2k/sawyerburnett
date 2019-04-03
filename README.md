@@ -39,3 +39,11 @@ yarn add @material-ui/core
 
 install react jss
 https://github.com/nozzle/react-static/tree/master/packages/react-static-plugin-jss
+
+#### Misc
+
+run shell inside of docker container
+
+```
+docker exec -it <container id> sh
+```
