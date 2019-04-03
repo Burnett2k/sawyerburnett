@@ -1,5 +1,5 @@
 # Set the base image to Node 8.7
-FROM node:alpine
+FROM node:8-alpine
 
 # File Author / Maintainer
 MAINTAINER Sawyer Blue Burnett
