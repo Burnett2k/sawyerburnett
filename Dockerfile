@@ -15,7 +15,7 @@ COPY public/ ./public
 
 # Install NPM packages ( using yarn )
 # RUN yarn global add react-static@6.3.8
-RUN yarn install
-RUN yarn build
+RUN npm install
+RUN npm run build
 
 EXPOSE 80
