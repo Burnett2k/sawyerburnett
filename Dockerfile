@@ -8,11 +8,12 @@ MAINTAINER Sawyer Blue Burnett
 COPY package.json ./
 COPY .babelrc ./
 COPY static.config.js ./
+COPY dist/ ./dist
 
-RUN npm install
+RUN npm install serve
 
-COPY src/ ./src
-COPY public/ ./public
+# COPY src/ ./src
+# COPY public/ ./public
 
 # Install NPM packages ( using yarn )
-RUN npm run build --debug
+# RUN npm run build --debug
