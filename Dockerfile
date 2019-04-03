@@ -8,14 +8,11 @@ MAINTAINER Sawyer Blue Burnett
 COPY package.json ./
 COPY .babelrc ./
 COPY static.config.js ./
-COPY yarn.lock ./
+
+RUN npm install
 
 COPY src/ ./src
 COPY public/ ./public
 
 # Install NPM packages ( using yarn )
-# RUN yarn global add react-static@6.3.8
-RUN npm install
-RUN npm run build
-
-EXPOSE 80
+RUN npm run build --debug
