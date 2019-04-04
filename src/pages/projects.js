@@ -1,4 +1,5 @@
 import React from "react";
+import Panel from "../containers/Panel.js";
 
 const projects = [
   {
@@ -28,9 +29,9 @@ export default () => (
     <h1>Projects</h1>
     <ul>
       {projects.map(project => (
-        <li key={project.id}>
-          <a href={project.link}>{project.title}</a>
-        </li>
+        <React.Fragment>
+          <Panel key={project.id} title={project.title} link={project.link} />
+        </React.Fragment>
       ))}
     </ul>
   </div>
