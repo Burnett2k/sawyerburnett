@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><link rel="preload" as="script" href="/templates/src-pages-projects.aa2a5dc5.js"/><link rel="preload" as="script" href="/templates/vendors~main.1289d6e0.js"/><link rel="preload" as="script" href="/main.9cc38635.js"/><style id="jss-server-side">.jss12 {
+<!DOCTYPE html><html lang="en"><head><link rel="preload" as="script" href="/templates/src-pages-projects.8270dd3e.js"/><link rel="preload" as="script" href="/templates/vendors~main.f1b094bf.js"/><link rel="preload" as="script" href="/main.b7aab7d9.js"/><style id="jss-server-side">.jss12 {
   background-color: #fff;
 }
 .jss13 {
@@ -453,6 +453,21 @@
 .jss62 {
   font-size: 35px;
 }
+.jss125 {
+  height: 0;
+  overflow: hidden;
+  transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.jss126 {
+  height: auto;
+  overflow: visible;
+}
+.jss127 {
+  display: flex;
+}
+.jss128 {
+  width: 100%;
+}
 html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -532,6 +547,106 @@ body {
 .jss73 {
   border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
+.jss115 {
+  position: relative;
+  transition: margin 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.jss115:before {
+  top: -1px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  content: "";
+  opacity: 1;
+  position: absolute;
+  transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.jss115.jss117 + .jss115:before {
+  display: none;
+}
+.jss115:first-child:before {
+  display: none;
+}
+.jss116 {
+  border-radius: 0;
+}
+.jss116:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.jss116:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+@supports (-ms-ime-align: auto) {
+  .jss116:last-child {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+.jss117 {
+  margin: 16px 0;
+}
+.jss117:first-child {
+  margin-top: 0;
+}
+.jss117:last-child {
+  margin-bottom: 0;
+}
+.jss117:before {
+  opacity: 0;
+}
+.jss118 {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.jss129 {
+  display: flex;
+  padding: 8px 24px 24px;
+}
+.jss119 {
+  display: flex;
+  padding: 0 24px 0 24px;
+  min-height: 48px;
+  transition: min-height 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.jss119:hover:not(.jss122) {
+  cursor: pointer;
+}
+.jss119.jss120 {
+  min-height: 64px;
+}
+.jss119.jss121 {
+  background-color: #e0e0e0;
+}
+.jss119.jss122 {
+  opacity: 0.38;
+}
+.jss123 {
+  margin: 12px 0;
+  display: flex;
+  flex-grow: 1;
+  transition: margin 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.jss123 > :last-child {
+  padding-right: 32px;
+}
+.jss123.jss120 {
+  margin: 20px 0;
+}
+.jss124 {
+  top: 50%;
+  right: 8px;
+  position: absolute;
+  transform: translateY(-50%) rotate(0deg);
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.jss124:hover {
+  background-color: transparent;
+}
+.jss124.jss120 {
+  transform: translateY(-50%) rotate(180deg);
+}
 .jss39 {
   display: flex;
   position: relative;
@@ -575,5 +690,12 @@ body {
 }
 .jss2 {
   flex-grow: 1;
-}</style><meta charSet="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"/></head><body><div id="root"><div style="outline:none" tabindex="-1" role="group"><div class="jss1"><header class="jss12 jss18 jss3 jss7 jss10"><div class="jss39 jss41 jss40"><div><button class="jss51 jss45 jss46 jss43" tabindex="0" type="button" aria-label="Menu" aria-haspopup="true"><span class="jss50"><svg class="jss54" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path fill="none" d="M0 0h24v24H0z"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div><h6 class="jss77 jss94 jss106 jss2">Sawyer Burnett</h6></div></header><div class="content"><div><h1>Projects</h1><ul><li><a href="https://github.com/Burnett2k/work-timer">Work Timer</a></li><li><a href="https://worktimer.xyz">Work Timer React</a></li><li><a href="https://github.com/Burnett2k/workout-manager">Workout Manager</a></li><li><a href="https://github.com/Burnett2k/BashPractice">Bash Practice</a></li></ul></div></div></div></div></div><script type="text/javascript">
-    window.__routeInfo = {"template":"../src/pages/projects.js","sharedHashesByProp":{},"data":{},"path":"projects","siteData":{"title":"React Static"}};</script><script defer="" type="text/javascript" src="/templates/src-pages-projects.aa2a5dc5.js"></script><script defer="" type="text/javascript" src="/templates/vendors~main.1289d6e0.js"></script><script defer="" type="text/javascript" src="/main.9cc38635.js"></script></body></html>
+}
+.jss113 {
+  width: 100%;
+}
+.jss114 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+}</style><meta charSet="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"/></head><body><div id="root"><div style="outline:none" tabindex="-1" role="group"><div class="jss1"><header class="jss12 jss18 jss3 jss7 jss10"><div class="jss39 jss41 jss40"><div><button class="jss51 jss45 jss46 jss43" tabindex="0" type="button" aria-label="Menu" aria-haspopup="true"><span class="jss50"><svg class="jss54" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path fill="none" d="M0 0h24v24H0z"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div><h6 class="jss77 jss94 jss106 jss2">Sawyer Burnett</h6></div></header><div class="content"><div><h1>Projects</h1><ul><div class="jss12 jss15 jss13 jss115 jss116"><div class="jss51 jss119" tabindex="0" role="button" aria-expanded="false"><div class="jss123"><p class="jss77 jss85 jss114">Work Timer</p></div><div class="jss51 jss45 jss124" tabindex="-1" role="button" aria-hidden="true"><span class="jss50"><svg class="jss54" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path><path fill="none" d="M0 0h24v24H0z"></path></svg></span></div></div><div class="jss125" style="min-height:0px" aria-hidden="true"><div class="jss127"><div class="jss128"><div class="jss129"><p class="jss77 jss85">https://github.com/Burnett2k/work-timer</p><p class="jss77 jss85"></p></div></div></div></div></div><div class="jss12 jss15 jss13 jss115 jss116"><div class="jss51 jss119" tabindex="0" role="button" aria-expanded="false"><div class="jss123"><p class="jss77 jss85 jss114">Work Timer React</p></div><div class="jss51 jss45 jss124" tabindex="-1" role="button" aria-hidden="true"><span class="jss50"><svg class="jss54" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path><path fill="none" d="M0 0h24v24H0z"></path></svg></span></div></div><div class="jss125" style="min-height:0px" aria-hidden="true"><div class="jss127"><div class="jss128"><div class="jss129"><p class="jss77 jss85">https://worktimer.xyz</p><p class="jss77 jss85"></p></div></div></div></div></div><div class="jss12 jss15 jss13 jss115 jss116"><div class="jss51 jss119" tabindex="0" role="button" aria-expanded="false"><div class="jss123"><p class="jss77 jss85 jss114">Workout Manager</p></div><div class="jss51 jss45 jss124" tabindex="-1" role="button" aria-hidden="true"><span class="jss50"><svg class="jss54" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path><path fill="none" d="M0 0h24v24H0z"></path></svg></span></div></div><div class="jss125" style="min-height:0px" aria-hidden="true"><div class="jss127"><div class="jss128"><div class="jss129"><p class="jss77 jss85">https://github.com/Burnett2k/workout-manager</p><p class="jss77 jss85"></p></div></div></div></div></div><div class="jss12 jss15 jss13 jss115 jss116"><div class="jss51 jss119" tabindex="0" role="button" aria-expanded="false"><div class="jss123"><p class="jss77 jss85 jss114">Bash Practice</p></div><div class="jss51 jss45 jss124" tabindex="-1" role="button" aria-hidden="true"><span class="jss50"><svg class="jss54" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path><path fill="none" d="M0 0h24v24H0z"></path></svg></span></div></div><div class="jss125" style="min-height:0px" aria-hidden="true"><div class="jss127"><div class="jss128"><div class="jss129"><p class="jss77 jss85">https://github.com/Burnett2k/BashPractice</p><p class="jss77 jss85"></p></div></div></div></div></div></ul></div></div></div></div></div><script type="text/javascript">
+    window.__routeInfo = {"template":"../src/pages/projects.js","sharedHashesByProp":{},"data":{},"path":"projects","siteData":{"title":"React Static"}};</script><script defer="" type="text/javascript" src="/templates/src-pages-projects.8270dd3e.js"></script><script defer="" type="text/javascript" src="/templates/vendors~main.f1b094bf.js"></script><script defer="" type="text/javascript" src="/main.b7aab7d9.js"></script></body></html>
