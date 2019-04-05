@@ -34,6 +34,9 @@ const theme = createMuiTheme({
   overrides: {
     MuiCard: {
       root: { minWidth: 300, maxWidth: 400 }
+    },
+    MuiCardMedia: {
+      root: { height: 300, maxHeight: 300 }
     }
   }
 });

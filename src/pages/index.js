@@ -4,10 +4,12 @@ import {
   Card,
   CardHeader,
   CardContent,
+  CardMedia,
   Typography,
   Grid
 } from "@material-ui/core";
 import CardContainer from "../containers/Card";
+import whitney from "../images/whitney-summit.jpg";
 
 export default withSiteData(() => (
   <CardContainer>
@@ -23,6 +25,7 @@ export default withSiteData(() => (
               rendering performance, user experience, unit testing, and solving
               problems.
             </Typography>
+            <CardMedia image={whitney} title="Mt Whitney Summit" />
           </CardContent>
         </Card>
       </Grid>
