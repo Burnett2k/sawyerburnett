@@ -6,10 +6,7 @@ import CardContainer from "../containers/Card";
 export default withSiteData(() => (
   <CardContainer>
     <Card>
-      <CardHeader
-        title="Such a great card"
-        subheader="such a great subheadline"
-      />
+      <CardHeader title="Intro" />
       <CardContent>
         <Typography component="p">
           I am a programmer currently working on React and Node JS applications,
