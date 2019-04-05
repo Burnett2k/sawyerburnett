@@ -30,6 +30,11 @@ const theme = createMuiTheme({
   },
   typography: {
     useNextVariants: true
+  },
+  overrides: {
+    MuiCard: {
+      root: { width: 400 }
+    }
   }
 });
 
