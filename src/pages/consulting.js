@@ -9,8 +9,8 @@ export default () => (
         Consulting Work
       </Typography>
       <Typography component="p">
-        I am open to occasional consulting and side projects related to agile
-        React, or NodeJS.
+        I am open to occasional consulting and side projects related to agile /
+        scrum processes, React, or NodeJS.
       </Typography>
     </Card>
   </div>
