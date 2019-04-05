@@ -33,7 +33,7 @@ const theme = createMuiTheme({
   },
   overrides: {
     MuiCard: {
-      root: { width: 400 }
+      root: { minWidth: 300, maxWidth: 400 }
     }
   }
 });

@@ -17,7 +17,7 @@ export default () => (
       <Typography component="p">
         This website was written using the following technology:
       </Typography>
-      <Grid container>
+      <Grid container justify="center">
         <Grid item>
           <Card>
             <CardHeader title="React-Static" />
